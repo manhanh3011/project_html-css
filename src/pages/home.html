@@ -1,14 +1,51 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="../../css/style.css"> 
-</head>
-<body> 
-    <div class="max-w-[1860px] h-13.75 bg-primary">
-        <p>Free Courses 🌟 Sale Ends Soon, Get It Now</p>
-    </div>
-</body>
+    <link rel="stylesheet" href="../../css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="max-w-[1860px] mx-auto m-2">
+      <div
+        class="flex items-center justify-center h-13.75 bg-primary rounded-lg text-white"
+      >
+        <p class="mr-5.5">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+        <i class="fa-solid fa-arrow-right"></i>
+      </div>
+      <nav class="container flex items-center justify-between">
+        <div class="flex p-5">
+          <img src="../assets/img/logo/Logo-destop.png" alt="logo" />
+          <ul
+            class="flex ml-12.5 [&_li]:px-3.25 [&_li]:py-3.5 [&_li]:rounded-lg [&_li]:hover:bg-primary-light"
+          >
+            <li>
+              <a href="../pages/home.html">Home</a>
+            </li>
+            <li>
+              <a href="#">Courses</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <ul class="flex [&_li]:px-8.25 [&_li]:py-3.5 [&_li]:rounded-lg">
+          <li><a href="#">Sign Up</a></li>
+          <li class="bg-primary text-white"><a href="#">Login</a></li>
+        </ul>
+      </nav>
+    </header>
+  </body>
 </html>
