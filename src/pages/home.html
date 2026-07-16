@@ -11,18 +11,18 @@
     />
   </head>
   <body>
-    <header class="max-w-[1860px] mx-auto m-2">
+    <header class="mt-2 px-2">
       <div
-        class="flex items-center justify-center h-13.75 bg-primary rounded-lg text-white"
+        class="bg-primary flex items-center justify-center rounded-lg py-3.5 text-white"
       >
         <p class="mr-5.5">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <i class="fa-solid fa-arrow-right"></i>
       </div>
-      <nav class="container flex items-center justify-between">
-        <div class="flex p-5">
+      <nav class="container flex items-center justify-between p-5">
+        <div class="flex items-center">
           <img src="../assets/img/logo/Logo-destop.png" alt="logo" />
           <ul
-            class="flex ml-12.5 [&_li]:px-3.25 [&_li]:py-3.5 [&_li]:rounded-lg [&_li]:hover:bg-primary-light"
+            class="[&_li]:hover:bg-primary-light ml-12.5 flex [&_li]:rounded-lg [&_li]:px-3.25 [&_li]:py-3.5"
           >
             <li>
               <a href="../pages/home.html">Home</a>
@@ -41,11 +41,54 @@
             </li>
           </ul>
         </div>
-        <ul class="flex [&_li]:px-8.25 [&_li]:py-3.5 [&_li]:rounded-lg">
+        <ul class="flex [&_li]:rounded-lg [&_li]:px-8.25 [&_li]:py-3.5">
           <li><a href="#">Sign Up</a></li>
           <li class="bg-primary text-white"><a href="#">Login</a></li>
         </ul>
       </nav>
+      <div class="mt-20 text-center">
+        <div
+          class="border-white-95 relative mx-auto inline-flex items-center rounded-[11px] border bg-white px-5 py-3.5"
+        >
+          <!-- icon  Abstract Line-->
+          <img
+            class="absolute -top-7.5 -left-6 h-10.75 w-9.75"
+            src="../assets/icons/Abstract Line.svg"
+            alt="Abstract Line"
+          />
+          <!-- icon vec tor 499 -->
+          <img
+            class="bg-orange-95 rounded-1.5 mr-2.5 p-3.5"
+            src="../assets/icons/Vector 449 (Stroke).svg"
+            alt="vec tor 499"
+          />
+          <h1 class="text-gray-10 text-heading-1">
+            <span class="text-primary">Unlock</span>
+            Your Creative Potential
+          </h1>
+        </div>
+        <div class="mt-5">
+          <h2 class="text-gray-15 text-heading-2">
+            with Online Design and Development Courses.
+          </h2>
+          <p class="mt-2.5">
+            Learn from Industry Experts and Enhance Your Skills.
+          </p>
+        </div>
+        <div
+          class="mt-15 [&_button]:cursor-pointer [&_button]:rounded-lg [&_button]:px-6 [&_button]:py-4.5"
+        >
+          <button class="bg-primary mr-2 text-white" type="button">
+            Explore Courses
+          </button>
+          <button
+            class="border-white-95 text-gray-15 border bg-white"
+            type="button"
+          >
+            View Pricing
+          </button>
+        </div>
+      </div>
     </header>
   </body>
 </html>

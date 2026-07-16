@@ -34,9 +34,26 @@
 }
 
 body {
-  @apply max-w-[1920px] mx-auto text-base bg-white-97;
+  @apply bg-white-97 mx-auto text-base;
 }
 
 .container {
-  @apply max-w-399 mx-auto;
+  @apply mx-auto max-w-399;
+}
+
+.text-display {
+  @apply text-[80px] font-semibold;
+}
+
+.text-heading-1 {
+  @apply text-5xl font-semibold;
+}
+
+.text-heading-2 {
+  @apply text-[38px] font-medium;
+}
+
+/* Card / component title */
+.text-title {
+  @apply text-2xl font-semibold;
 }
