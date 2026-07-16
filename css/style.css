@@ -19,6 +19,7 @@
     --font-weight-medium: 500;
     --font-weight-semibold: 600;
     --radius-lg: 0.5rem;
+    --radius-xl: 0.75rem;
     --default-font-family: var(--font-sans);
     --default-mono-font-family: var(--font-mono);
     --color-gray-10: #191919;
@@ -185,9 +186,6 @@
   .relative {
     position: relative;
   }
-  .-top-7 {
-    top: calc(var(--spacing) * -7);
-  }
   .-top-7\.5 {
     top: calc(var(--spacing) * -7.5);
   }
@@ -215,12 +213,6 @@
   .mx-auto {
     margin-inline: auto;
   }
-  .mt-1 {
-    margin-top: var(--spacing);
-  }
-  .mt-1\.5 {
-    margin-top: calc(var(--spacing) * 1.5);
-  }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
   }
@@ -236,26 +228,14 @@
   .mt-20 {
     margin-top: calc(var(--spacing) * 20);
   }
-  .mt-\[60\] {
-    margin-top: 60;
-  }
-  .mt-\[60px\] {
-    margin-top: 60px;
-  }
   .mr-2 {
     margin-right: calc(var(--spacing) * 2);
   }
   .mr-2\.5 {
     margin-right: calc(var(--spacing) * 2.5);
   }
-  .mr-5 {
-    margin-right: calc(var(--spacing) * 5);
-  }
   .mr-5\.5 {
     margin-right: calc(var(--spacing) * 5.5);
-  }
-  .ml-12 {
-    margin-left: calc(var(--spacing) * 12);
   }
   .ml-12\.5 {
     margin-left: calc(var(--spacing) * 12.5);
@@ -266,38 +246,11 @@
   .inline-flex {
     display: inline-flex;
   }
-  .table {
-    display: table;
-  }
-  .h-10 {
-    height: calc(var(--spacing) * 10);
-  }
   .h-10\.75 {
     height: calc(var(--spacing) * 10.75);
   }
-  .h-\[43\] {
-    height: 43;
-  }
-  .h-\[43px\] {
-    height: 43px;
-  }
-  .w-9 {
-    width: calc(var(--spacing) * 9);
-  }
   .w-9\.75 {
     width: calc(var(--spacing) * 9.75);
-  }
-  .w-\[39px\] {
-    width: 39px;
-  }
-  .w-fit {
-    width: fit-content;
-  }
-  .border-collapse {
-    border-collapse: collapse;
-  }
-  .resize {
-    resize: both;
   }
   .items-center {
     align-items: center;
@@ -313,6 +266,9 @@
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
+  }
+  .rounded-xl {
+    border-radius: var(--radius-xl);
   }
   .border {
     border-style: var(--tw-border-style);
@@ -330,17 +286,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-white-95 {
-    background-color: var(--color-white-95);
-  }
-  .p-3 {
-    padding: calc(var(--spacing) * 3);
-  }
   .p-3\.5 {
     padding: calc(var(--spacing) * 3.5);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
+  }
+  .p-7\.5 {
+    padding: calc(var(--spacing) * 7.5);
   }
   .px-2 {
     padding-inline: calc(var(--spacing) * 2);
@@ -348,21 +301,11 @@
   .px-5 {
     padding-inline: calc(var(--spacing) * 5);
   }
-  .py-3 {
-    padding-block: calc(var(--spacing) * 3);
-  }
   .py-3\.5 {
     padding-block: calc(var(--spacing) * 3.5);
   }
   .text-center {
     text-align: center;
-  }
-  .text-\[38px\] {
-    font-size: 38px;
-  }
-  .font-medium {
-    --tw-font-weight: var(--font-weight-medium);
-    font-weight: var(--font-weight-medium);
   }
   .text-gray-10 {
     color: var(--color-gray-10);
@@ -375,13 +318,6 @@
   }
   .text-white {
     color: var(--color-white);
-  }
-  .underline {
-    text-decoration-line: underline;
-  }
-  .outline {
-    outline-style: var(--tw-outline-style);
-    outline-width: 1px;
   }
   .\[\&_button\]\:cursor-pointer {
     & button {
@@ -432,6 +368,47 @@
       }
     }
   }
+  .\[\&\>div\]\:flex {
+    &>div {
+      display: flex;
+    }
+  }
+  .\[\&\>div\]\:flex-1 {
+    &>div {
+      flex: 1;
+    }
+  }
+  .\[\&\>div\]\:items-center {
+    &>div {
+      align-items: center;
+    }
+  }
+  .\[\&\>div\]\:justify-center {
+    &>div {
+      justify-content: center;
+    }
+  }
+  .\[\&\>div\]\:border-white-95 {
+    &>div {
+      border-color: var(--color-white-95);
+    }
+  }
+  .\[\&\>div\]\:px-10 {
+    &>div {
+      padding-inline: calc(var(--spacing) * 10);
+    }
+  }
+  .\[\&\>div\]\:py-7\.5 {
+    &>div {
+      padding-block: calc(var(--spacing) * 7.5);
+    }
+  }
+  .\[\&\>div\:not\(\:last-child\)\]\:border-r {
+    &>div:not(:last-child) {
+      border-right-style: var(--tw-border-style);
+      border-right-width: 1px;
+    }
+  }
 }
 body {
   margin-inline: auto;
@@ -474,17 +451,11 @@ body {
   syntax: "*";
   inherits: false;
 }
-@property --tw-outline-style {
-  syntax: "*";
-  inherits: false;
-  initial-value: solid;
-}
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
       --tw-border-style: solid;
       --tw-font-weight: initial;
-      --tw-outline-style: solid;
     }
   }
 }
