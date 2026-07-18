@@ -411,6 +411,15 @@
       }
     }
   }
+  .\[\&_li\]\:hover\:text-primary {
+    & li {
+      &:hover {
+        @media (hover: hover) {
+          color: var(--color-primary);
+        }
+      }
+    }
+  }
   .\[\&\>div\]\:flex {
     &>div {
       display: flex;
