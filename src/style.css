@@ -37,7 +37,7 @@
 }
 
 body {
-  @apply bg-white-97 mx-auto text-base;
+  @apply bg-white-97 mx-auto text-[14px] lg:text-[16px] xl:text-base;
 }
 
 .container {
@@ -49,13 +49,13 @@ body {
 }
 
 .text-heading-1 {
-  @apply text-5xl font-semibold;
+  @apply text-[28px] lg:text-[38px] xl:text-5xl font-semibold;
 }
 
 .text-heading-2 {
-  @apply text-[38px] font-medium;
+  @apply text-2xl lg:text-[28px] xl:text-[38px] font-medium;
 }
 
 .text-title {
-  @apply text-2xl font-semibold;
+  @apply text-[20px] xl:text-2xl font-semibold;
 }
