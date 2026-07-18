@@ -30,11 +30,12 @@
   </head>
   <body>
     <header>
-      <div class="bg-primary mx-2 mt-2 flex items-center justify-center rounded-lg py-3.5 text-white">
+      <div class="bg-primary mx-4 mt-4 flex items-center justify-center rounded-lg px-4 py-2.5 text-white xl:py-3.5">
         <p class="mr-5.5">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <i class="fa-solid fa-arrow-right"></i>
       </div>
-      <nav class="container flex items-center justify-between p-5">
+      <input type="checkbox" id="menu-toggle" class="peer hidden" />
+      <nav class="container flex items-center justify-between py-3.5 xl:p-5">
         <div class="flex items-center">
           <a href="./index.html"><img src="./assets/img/logo/Logo-destop.png" alt="logo" /></a>
           <ul class="ml-12.5 hidden lg:flex">
@@ -57,8 +58,15 @@
             </li>
           </ul>
         </div>
-        <ul class="flex">
-          <li><a class="hover:bg-primary-light hover:text-primary block rounded-lg px-8.25 py-3.5" href="#">Sign Up</a></li>
+        <ul class="flex items-center gap-5">
+          <li>
+            <a
+              class="hover:bg-primary-light hover:text-primary block rounded-lg hover:px-8.25 hover:py-3.5 lg:px-8.25 lg:py-3.5"
+              href="#"
+            >
+              Sign Up
+            </a>
+          </li>
           <li>
             <a
               class="bg-primary hover:text-gray-15 hover:bg-orange-90 block rounded-lg px-8.25 py-3.5 text-white"
@@ -67,9 +75,34 @@
               Login
             </a>
           </li>
+          <label for="menu-toggle" class="cursor-pointer">
+            <img class="lg:hidden" src="./assets/icons/bars.svg" alt="navbar" />
+          </label>
         </ul>
       </nav>
-      <div class="mt-20 text-center">
+      <!-- menu mobile -->
+      <div class="fixed top-0 right-0 z-50 h-screen w-83 rounded-l-4xl translate-x-full peer-checked:translate-x-0 transition-transform duration-300 bg-white p-2.5">
+        <div class="border-white-95 flex items-center justify-between border-b px-2.5 py-3.5">
+          <img src="./assets/img/logo/Logo-destop.png" alt="logo" />
+          <label for="menu-toggle" class="text-gray-15 cursor-pointer text-2xl font-medium">
+            <i class="fa-solid fa-x"></i>
+          </label>
+        </div>
+        <ul class="mt-5 flex flex-col space-y-2 text-center">
+          <li>
+            <a href="./index.html" class="hover:bg-primary-light hover:text-primary block rounded-lg py-3.5">Home</a>
+          </li>
+          <li><a href="#" class="hover:bg-primary-light hover:text-primary block rounded-lg py-3.5">Courses</a></li>
+          <li><a href="#" class="hover:bg-primary-light hover:text-primary block rounded-lg py-3.5">About Us</a></li>
+          <li><a href="#" class="hover:bg-primary-light hover:text-primary block rounded-lg py-3.5">Pricing</a></li>
+          <li><a href="#" class="hover:bg-primary-light hover:text-primary block rounded-lg py-3.5">Contact</a></li>
+        </ul>
+      </div>
+      <label
+        for="menu-toggle"
+        class="invisible fixed inset-0 z-40 bg-black/50 opacity-0 transition-all duration-300 peer-checked:visible peer-checked:opacity-100"
+      ></label>
+      <div class="container mt-20 text-center">
         <div
           class="border-white-95 relative mx-auto inline-flex items-center rounded-[11px] border bg-white px-5 py-3.5"
         >
@@ -95,10 +128,15 @@
           <p class="mt-2.5">Learn from Industry Experts and Enhance Your Skills.</p>
         </div>
         <div class="mt-15 flex justify-center gap-2">
-          <a href="#" class="bg-primary hover:bg-orange-70 text-white block rounded-lg px-6 py-4.5">Explore Courses</a>
-          <a href="#" class="border-white-95 hover:bg-white-95 text-gray-15 block border rounded-lg px-6 py-4.5 bg-white">View Pricing</a>
+          <a href="#" class="bg-primary hover:bg-orange-70 block rounded-lg px-6 py-4.5 text-white">Explore Courses</a>
+          <a
+            href="#"
+            class="border-white-95 hover:bg-white-95 text-gray-15 block rounded-lg border bg-white px-6 py-4.5"
+          >
+            View Pricing
+          </a>
         </div>
-      </div> 
+      </div>
       <div class="container my-20 rounded-xl bg-white p-7.5">
         <div
           class="[&>div]:border-white-95 flex items-center [&>div]:flex [&>div]:flex-1 [&>div]:items-center [&>div]:justify-center [&>div]:px-10 [&>div]:py-7.5 [&>div:not(:last-child)]:border-r"

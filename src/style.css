@@ -14,7 +14,7 @@
 
   /* Orange */
   --color-orange-50: #ff9500;
-  --color-orange-70: #FFBF66;
+  --color-orange-70: #ffbf66;
   --color-orange-90: #ffeacc;
   --color-orange-95: #fff4e5;
   --color-orange-97: #fff9f0;
@@ -32,6 +32,8 @@
   /* primary → màu thương hiệu chính*/
   --color-primary: var(--color-orange-50);
   --color-primary-light: var(--color-white-95);
+
+  --breakpoint-3xl: 1920px;
 }
 
 body {
@@ -39,7 +41,7 @@ body {
 }
 
 .container {
-  @apply mx-auto max-w-399;
+  @apply mx-auto max-w-399 px-4 xl:px-20 3xl:px-0;
 }
 
 .text-display {
