@@ -6,65 +6,67 @@
     <title>Home Page</title>
 
     <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="57x57" href="../favicons/">
-    <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png">
-    <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png">
-    <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png">
-    <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png">
-    <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png">
-    <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png">
-    <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png">
-    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="../favicons/android-icon-192x192.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png">
-    <link rel="manifest" href="../favicons/manifest.json">
-    <meta name="msapplication-TileColor" content="#ffffff">
-    <meta name="msapplication-TileImage" content="../favicons/ms-icon-144x144.png">
-    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicons/" />
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicons/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicons/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="../favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="../favicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="../favicons/favicon-16x16.png" />
+    <link rel="manifest" href="../favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="../favicons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
 
     <!-- style css -->
     <link rel="stylesheet" href="../css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
   </head>
   <body>
-    <header class="mt-2 px-2">
-      <div
-        class="bg-primary flex items-center justify-center rounded-lg py-3.5 text-white"
-      >
+    <header>
+      <div class="bg-primary mx-2 mt-2 flex items-center justify-center rounded-lg py-3.5 text-white">
         <p class="mr-5.5">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
         <i class="fa-solid fa-arrow-right"></i>
       </div>
       <nav class="container flex items-center justify-between p-5">
         <div class="flex items-center">
           <a href="./index.html"><img src="./assets/img/logo/Logo-destop.png" alt="logo" /></a>
-          <ul
-            class="[&_li]:hover:bg-primary-light [&_li]:hover:text-primary ml-12.5 flex [&_li]:rounded-lg [&_li]:px-3.25 [&_li]:py-3.5"
-          >
+          <ul class="ml-12.5 hidden lg:flex">
             <li>
-              <a href="./index.html">Home</a>
+              <a class="hover:bg-primary-light hover:text-primary block rounded-lg px-3.25 py-3.5" href="./index.html">
+                Home
+              </a>
             </li>
             <li>
-              <a href="#">Courses</a>
+              <a class="hover:bg-primary-light hover:text-primary block rounded-lg px-3.25 py-3.5" href="#">Courses</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a class="hover:bg-primary-light hover:text-primary block rounded-lg px-3.25 py-3.5" href="#">About Us</a>
             </li>
             <li>
-              <a href="#">Pricing</a>
+              <a class="hover:bg-primary-light hover:text-primary block rounded-lg px-3.25 py-3.5" href="#">Pricing</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a class="hover:bg-primary-light hover:text-primary block rounded-lg px-3.25 py-3.5" href="#">Contact</a>
             </li>
           </ul>
         </div>
-        <ul class="flex [&_li]:rounded-lg [&_li]:px-8.25 [&_li]:py-3.5">
-          <li><a href="#">Sign Up</a></li>
-          <li class="bg-primary text-white"><a href="#">Login</a></li>
+        <ul class="flex">
+          <li><a class="hover:bg-primary-light hover:text-primary block rounded-lg px-8.25 py-3.5" href="#">Sign Up</a></li>
+          <li>
+            <a
+              class="bg-primary hover:text-gray-15 hover:bg-orange-90 block rounded-lg px-8.25 py-3.5 text-white"
+              href="#"
+            >
+              Login
+            </a>
+          </li>
         </ul>
       </nav>
       <div class="mt-20 text-center">
@@ -89,27 +91,14 @@
           </h1>
         </div>
         <div class="mt-5">
-          <h2 class="text-gray-15 text-heading-2">
-            with Online Design and Development Courses.
-          </h2>
-          <p class="mt-2.5">
-            Learn from Industry Experts and Enhance Your Skills.
-          </p>
+          <h2 class="text-gray-15 text-heading-2">with Online Design and Development Courses.</h2>
+          <p class="mt-2.5">Learn from Industry Experts and Enhance Your Skills.</p>
         </div>
-        <div
-          class="mt-15 [&_button]:cursor-pointer [&_button]:rounded-lg [&_button]:px-6 [&_button]:py-4.5"
-        >
-          <button class="bg-primary mr-2 text-white" type="button">
-            Explore Courses
-          </button>
-          <button
-            class="border-white-95 text-gray-15 border bg-white"
-            type="button"
-          >
-            View Pricing
-          </button>
+        <div class="mt-15 flex justify-center gap-2">
+          <a href="#" class="bg-primary hover:bg-orange-70 text-white block rounded-lg px-6 py-4.5">Explore Courses</a>
+          <a href="#" class="border-white-95 hover:bg-white-95 text-gray-15 block border rounded-lg px-6 py-4.5 bg-white">View Pricing</a>
         </div>
-      </div>
+      </div> 
       <div class="container my-20 rounded-xl bg-white p-7.5">
         <div
           class="[&>div]:border-white-95 flex items-center [&>div]:flex [&>div]:flex-1 [&>div]:items-center [&>div]:justify-center [&>div]:px-10 [&>div]:py-7.5 [&>div:not(:last-child)]:border-r"
