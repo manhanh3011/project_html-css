@@ -41,21 +41,25 @@ body {
 }
 
 .container {
-  @apply mx-auto max-w-399 px-4 xl:px-20 3xl:px-0;
+  @apply 3xl:px-0 mx-auto max-w-399 px-4 xl:px-20;
 }
 
 .text-display {
-  @apply text-[80px] font-semibold;
+  @apply 3xl:text-[80px] text-[50px] font-bold xl:text-[60px];
 }
 
 .text-heading-1 {
-  @apply text-[28px] lg:text-[38px] xl:text-5xl font-semibold;
+  @apply text-[28px] font-semibold lg:text-[38px] xl:text-5xl;
 }
 
 .text-heading-2 {
-  @apply text-2xl lg:text-[28px] xl:text-[38px] font-medium;
+  @apply text-2xl font-medium lg:text-[28px] xl:text-[38px];
 }
 
 .text-title {
-  @apply text-[20px] xl:text-2xl font-semibold;
+  @apply 3xl:text-2xl text-[20px] font-semibold;
+}
+
+@utility hover-primary {
+  @apply hover:bg-primary-light hover:text-primary;
 }
