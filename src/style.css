@@ -60,9 +60,8 @@ body {
   @apply 3xl:text-2xl text-[20px] font-semibold;
 }
 
-.text-courses{
-  @apply 3xl:text-2xl xl:text-[20px] text-[18px] font-semibold;
-
+.text-courses {
+  @apply 3xl:text-2xl text-[18px] font-semibold xl:text-[20px];
 }
 
 @utility hover-primary {
@@ -70,5 +69,13 @@ body {
 }
 
 @utility border-default {
-  @apply border border-white-95;
+  @apply border-white-95 border;
+}
+
+@utility padding-pricing {
+  @apply 3xl:p-7.5 3xl:pt-12.5 p-5 pt-7.5 xl:p-6 xl:pt-10;
+}
+
+@utility feature-item {
+  @apply border-default flex items-start gap-2 rounded-md p-3;
 }
