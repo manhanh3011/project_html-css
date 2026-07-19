@@ -60,6 +60,15 @@ body {
   @apply 3xl:text-2xl text-[20px] font-semibold;
 }
 
+.text-courses{
+  @apply 3xl:text-2xl xl:text-[20px] text-[18px] font-semibold;
+
+}
+
 @utility hover-primary {
   @apply hover:bg-primary-light hover:text-primary;
+}
+
+@utility border-default {
+  @apply border border-white-95;
 }
