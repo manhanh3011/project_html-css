@@ -344,6 +344,9 @@
   .hidden {
     display: none;
   }
+  .hidden\! {
+    display: none !important;
+  }
   .inline-flex {
     display: inline-flex;
   }
@@ -387,6 +390,9 @@
   .resize {
     resize: both;
   }
+  .list-none {
+    list-style-type: none;
+  }
   .grid-cols-1 {
     grid-template-columns: repeat(1, minmax(0, 1fr));
   }
@@ -429,6 +435,9 @@
   .gap-7\.5 {
     gap: calc(var(--spacing) * 7.5);
   }
+  .gap-10 {
+    gap: calc(var(--spacing) * 10);
+  }
   .space-y-2 {
     :where(& > :not(:last-child)) {
       --tw-space-y-reverse: 0;
@@ -457,6 +466,9 @@
   }
   .rounded-\[11px\] {
     border-radius: 11px;
+  }
+  .rounded-full {
+    border-radius: calc(infinity * 1px);
   }
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -533,6 +545,9 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-white-95 {
+    background-color: var(--color-white-95);
+  }
   .bg-white-97 {
     background-color: var(--color-white-97);
   }
@@ -569,6 +584,9 @@
   }
   .p-3\.5 {
     padding: calc(var(--spacing) * 3.5);
+  }
+  .p-4 {
+    padding: calc(var(--spacing) * 4);
   }
   .p-5 {
     padding: calc(var(--spacing) * 5);
@@ -642,6 +660,12 @@
   .py-5 {
     padding-block: calc(var(--spacing) * 5);
   }
+  .pt-5 {
+    padding-top: calc(var(--spacing) * 5);
+  }
+  .pb-5 {
+    padding-bottom: calc(var(--spacing) * 5);
+  }
   .text-center {
     text-align: center;
   }
@@ -714,6 +738,16 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+  .group-open\:block {
+    &:is(:where(.group):is([open], :popover-open, :open) *) {
+      display: block;
+    }
+  }
+  .group-open\:hidden {
+    &:is(:where(.group):is([open], :popover-open, :open) *) {
+      display: none;
+    }
+  }
   .peer-checked\:visible {
     &:is(:where(.peer):checked ~ *) {
       visibility: visible;
@@ -728,6 +762,16 @@
   .peer-checked\:opacity-100 {
     &:is(:where(.peer):checked ~ *) {
       opacity: 100%;
+    }
+  }
+  .peer-checked\/faq\:block {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      display: block;
+    }
+  }
+  .peer-checked\/faq\:hidden {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      display: none;
     }
   }
   .peer-checked\/monthly\:bg-primary {
@@ -764,6 +808,13 @@
       }
     }
   }
+  .hover\:bg-primary {
+    &:hover {
+      @media (hover: hover) {
+        background-color: var(--color-primary);
+      }
+    }
+  }
   .hover\:bg-white-95 {
     &:hover {
       @media (hover: hover) {
@@ -792,9 +843,21 @@
       }
     }
   }
+  .hover\:text-white {
+    &:hover {
+      @media (hover: hover) {
+        color: var(--color-white);
+      }
+    }
+  }
   .\33 xl\:my-12\.5 {
     @media (width >= 1920px) {
       margin-block: calc(var(--spacing) * 12.5);
+    }
+  }
+  .\33 xl\:mt-12\.5 {
+    @media (width >= 1920px) {
+      margin-top: calc(var(--spacing) * 12.5);
     }
   }
   .\33 xl\:mb-3\.5 {
@@ -812,6 +875,21 @@
       gap: calc(var(--spacing) * 7.5);
     }
   }
+  .\33 xl\:gap-30 {
+    @media (width >= 1920px) {
+      gap: calc(var(--spacing) * 30);
+    }
+  }
+  .\33 xl\:p-1\.5 {
+    @media (width >= 1920px) {
+      padding: calc(var(--spacing) * 1.5);
+    }
+  }
+  .\33 xl\:p-3\.5 {
+    @media (width >= 1920px) {
+      padding: calc(var(--spacing) * 3.5);
+    }
+  }
   .\33 xl\:p-10 {
     @media (width >= 1920px) {
       padding: calc(var(--spacing) * 10);
@@ -822,14 +900,29 @@
       padding: calc(var(--spacing) * 12.5);
     }
   }
+  .\33 xl\:p-15 {
+    @media (width >= 1920px) {
+      padding: calc(var(--spacing) * 15);
+    }
+  }
   .\33 xl\:p-20 {
     @media (width >= 1920px) {
       padding: calc(var(--spacing) * 20);
     }
   }
+  .\33 xl\:p-25 {
+    @media (width >= 1920px) {
+      padding: calc(var(--spacing) * 25);
+    }
+  }
   .\33 xl\:px-4 {
     @media (width >= 1920px) {
       padding-inline: calc(var(--spacing) * 4);
+    }
+  }
+  .\33 xl\:px-6 {
+    @media (width >= 1920px) {
+      padding-inline: calc(var(--spacing) * 6);
     }
   }
   .\33 xl\:px-7\.5 {
@@ -857,6 +950,11 @@
       padding-block: calc(var(--spacing) * 3.5);
     }
   }
+  .\33 xl\:py-4\.5 {
+    @media (width >= 1920px) {
+      padding-block: calc(var(--spacing) * 4.5);
+    }
+  }
   .\33 xl\:py-7\.5 {
     @media (width >= 1920px) {
       padding-block: calc(var(--spacing) * 7.5);
@@ -880,6 +978,11 @@
       line-height: var(--tw-leading, var(--text-xl--line-height));
     }
   }
+  .\33 xl\:text-\[18px\] {
+    @media (width >= 1920px) {
+      font-size: 18px;
+    }
+  }
   .\33 xl\:text-\[20px\] {
     @media (width >= 1920px) {
       font-size: 20px;
@@ -888,6 +991,11 @@
   .xl\:my-10 {
     @media (width >= 80rem) {
       margin-block: calc(var(--spacing) * 10);
+    }
+  }
+  .xl\:mt-10 {
+    @media (width >= 80rem) {
+      margin-top: calc(var(--spacing) * 10);
     }
   }
   .xl\:mt-20 {
@@ -915,9 +1023,19 @@
       display: none;
     }
   }
+  .xl\:w-2\/5 {
+    @media (width >= 80rem) {
+      width: calc(2 / 5 * 100%);
+    }
+  }
   .xl\:w-3\/4 {
     @media (width >= 80rem) {
       width: calc(3 / 4 * 100%);
+    }
+  }
+  .xl\:w-3\/5 {
+    @media (width >= 80rem) {
+      width: calc(3 / 5 * 100%);
     }
   }
   .xl\:grid-cols-2 {
@@ -950,6 +1068,11 @@
       gap: 0;
     }
   }
+  .xl\:gap-20 {
+    @media (width >= 80rem) {
+      gap: calc(var(--spacing) * 20);
+    }
+  }
   .xl\:self-end {
     @media (width >= 80rem) {
       align-self: flex-end;
@@ -973,6 +1096,11 @@
   .xl\:p-12\.5 {
     @media (width >= 80rem) {
       padding: calc(var(--spacing) * 12.5);
+    }
+  }
+  .xl\:p-20 {
+    @media (width >= 80rem) {
+      padding: calc(var(--spacing) * 20);
     }
   }
   .xl\:px-5 {
@@ -1019,6 +1147,69 @@
   .xl\:text-\[36px\] {
     @media (width >= 80rem) {
       font-size: 36px;
+    }
+  }
+  .peer-checked\/faq\:\[\&_\.fa-plus\]\:hidden {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      & .fa-plus {
+        display: none;
+      }
+    }
+  }
+  .peer-checked\/faq\:\[\&_\.fa-xmark\]\:block {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      & .fa-xmark {
+        display: block;
+      }
+    }
+  }
+  .peer-checked\/faq\:\[\&_\.fa-xmark\]\:block\! {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      & .fa-xmark {
+        display: block !important;
+      }
+    }
+  }
+  .peer-checked\/faq\:\[\&\.fa-plus\]\:hidden {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      &.fa-plus {
+        display: none;
+      }
+    }
+  }
+  .peer-checked\/faq\:\[\&\>\.fa-plus\]\:hidden {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      &>.fa-plus {
+        display: none;
+      }
+    }
+  }
+  .peer-checked\/faq\:\[\&\>\.fa-plus\]\:hidden\! {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      &>.fa-plus {
+        display: none !important;
+      }
+    }
+  }
+  .peer-checked\/faq\:\[\&\>\.fa-xmark\]\:\!block {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      &>.fa-xmark {
+        display: block !important;
+      }
+    }
+  }
+  .peer-checked\/faq\:\[\&\>\.fa-xmark\]\:block {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      &>.fa-xmark {
+        display: block;
+      }
+    }
+  }
+  .peer-checked\/faq\:\[\&\>\.fa-xmark\]\:block\! {
+    &:is(:where(.peer\/faq):checked ~ *) {
+      &>.fa-xmark {
+        display: block !important;
+      }
     }
   }
   .\[\&\>div\]\:flex {
