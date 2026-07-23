@@ -1309,6 +1309,16 @@
       align-self: flex-end;
     }
   }
+  .xl\:rounded-lg {
+    @media (width >= 80rem) {
+      border-radius: var(--radius-lg);
+    }
+  }
+  .xl\:rounded-xl {
+    @media (width >= 80rem) {
+      border-radius: var(--radius-xl);
+    }
+  }
   .xl\:border {
     @media (width >= 80rem) {
       border-style: var(--tw-border-style);

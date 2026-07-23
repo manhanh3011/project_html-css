@@ -1,0 +1,430 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pricing</title>
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="57x57" href="./favicons/" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./favicons/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./favicons/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./favicons/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="./favicons/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="./favicons/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="./favicons/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="./favicons/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicons/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="./favicons/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="./favicons/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicons/favicon-16x16.png" />
+    <link rel="manifest" href="./favicons/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="./favicons/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+
+    <!-- style css -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+  </head>
+  <body>
+    <header>
+      <div class="border-white-95 mx-4 border-b">
+        <div class="bg-primary mt-4 flex items-center justify-center rounded-xl px-4 py-2.5 text-white xl:py-3.5">
+          <p class="mr-5.5">Free Courses 🌟 Sale Ends Soon, Get It Now</p>
+          <i class="fa-solid fa-arrow-right"></i>
+        </div>
+
+        <input type="checkbox" id="menu-toggle" class="peer hidden" />
+        <nav class="container flex items-center justify-between py-3.5 xl:p-5">
+          <div class="flex items-center">
+            <a href="./index.html"><img src="./assets/img/logo/Logo-destop.png" alt="logo" /></a>
+            <ul class="ml-12.5 hidden xl:flex">
+              <li>
+                <a class="hover-primary block rounded-xl px-3.25 py-3.5" href="./index.html">Home</a>
+              </li>
+              <li>
+                <a class="hover-primary block rounded-xl px-3.25 py-3.5" href="./courses.html">Courses</a>
+              </li>
+              <li>
+                <a class="hover-primary block rounded-xl px-3.25 py-3.5" href="#">About Us</a>
+              </li>
+              <li>
+                <a class="hover-primary block rounded-xl px-3.25 py-3.5" href="./pricing.html">Pricing</a>
+              </li>
+              <li>
+                <a class="hover-primary block rounded-xl px-3.25 py-3.5" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <ul class="flex items-center gap-5 xl:gap-0">
+            <li>
+              <a class="hover-primary block rounded-xl hover:px-8.25 hover:py-3.5 xl:px-8.25 xl:py-3.5" href="#">
+                Sign Up
+              </a>
+            </li>
+            <li>
+              <a
+                class="bg-primary hover:text-gray-15 hover:bg-orange-90 block rounded-xl px-8.25 py-3.5 text-white"
+                href="#"
+              >
+                Login
+              </a>
+            </li>
+            <label for="menu-toggle" class="cursor-pointer">
+              <img class="xl:hidden" src="./assets/icons/bars.svg" alt="navbar" />
+            </label>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- menu graphic -->
+      <div
+        class="fixed top-0 right-0 z-50 h-screen w-83 translate-x-full rounded-l-4xl bg-white p-2.5 transition-transform duration-300 peer-checked:translate-x-0"
+      >
+        <div class="border-white-95 flex items-center justify-between border-b px-2.5 py-3.5">
+          <img src="./assets/img/logo/Logo-destop.png" alt="logo" />
+          <label for="menu-toggle" class="text-gray-15 cursor-pointer text-2xl font-medium">
+            <i class="fa-solid fa-x"></i>
+          </label>
+        </div>
+        <ul class="mt-5 flex flex-col space-y-2 text-center">
+          <li>
+            <a href="./index.html" class="hover-primary block rounded-xl py-3.5">Home</a>
+          </li>
+          <li><a href="./courses.html" class="hover-primary block rounded-xl py-3.5">Courses</a></li>
+          <li><a href="#" class="hover-primary block rounded-xl py-3.5">About Us</a></li>
+          <li><a href="./pricing.html" class="hover-primary block rounded-xl py-3.5">Pricing</a></li>
+          <li><a href="#" class="hover-primary block rounded-xl py-3.5">Contact</a></li>
+        </ul>
+      </div>
+      <label
+        for="menu-toggle"
+        class="invisible fixed inset-0 z-40 bg-black/50 opacity-0 transition-all duration-300 peer-checked:visible peer-checked:opacity-100"
+      ></label>
+    </header>
+
+    <main>
+      <div class="container mt-15 xl:mt-25">
+        <div
+          class="border-white-90 3xl:gap-25 3xl:pb-12.5 flex flex-col items-center gap-4 border-b pb-7.5 xl:flex-row xl:gap-20 xl:pb-10"
+        >
+          <h1 class="text-heading-1 text-gray-15 xl:w-1/2">Our Pricings</h1>
+          <p class="text-gray-35 xl:w-1/2">
+            Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs:
+            Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether
+            you're an individual looking to enhance your skills or a business seeking professional development
+            solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best
+            fits your requirements.
+          </p>
+        </div>
+      </div>
+
+      <section class="container mt-15 xl:mt-25">
+        <div class="mb-10 flex flex-col justify-center gap-5 xl:mb-15 xl:flex-row">
+          <div class="flex items-center self-center rounded-lg bg-white p-3">
+            <input type="radio" name="pricing" id="monthly" class="peer/monthly hidden" checked />
+            <label
+              for="monthly"
+              class="3xl:px-7.5 3xl:py-3.5 text-gray-30 peer-checked/monthly:bg-primary cursor-pointer rounded-md px-6 py-3 peer-checked/monthly:text-white"
+            >
+              Monthly
+            </label>
+
+            <input type="radio" name="pricing" id="yearly" class="peer/yearly hidden" />
+            <label
+              for="yearly"
+              class="3xl:px-7.5 3xl:py-3.5 text-gray-30 peer-checked/yearly:bg-primary cursor-pointer rounded-md px-6 py-3 peer-checked/yearly:text-white"
+            >
+              Yearly
+            </label>
+          </div>
+        </div>
+
+        <div class="3xl:gap-7.5 3xl:p-20 grid grid-cols-1 gap-7.5 rounded-xl bg-white p-5 xl:grid-cols-2 xl:p-12.5">
+          <div class="bg-white-99 border-default padding-pricing flex flex-col rounded-xl">
+            <p
+              class="text-16px text-gray-15 bg-orange-97 border-orange-90 3xl:py-3 rounded-sm xl:rounded-lg border px-5.5 py-2 text-center font-medium"
+            >
+              Free Plan
+            </p>
+            <p class="text-display text-gray-15 my-12.5 text-center">
+              $0
+              <span class="text-gray-30 text-[14px] font-medium xl:text-base">/month</span>
+            </p>
+
+            <div class="border-default overflow-hidden rounded-md xl:rounded-xl bg-white">
+              <div class="3xl:p-10 p-5 xl:p-7.5">
+                <p class="3xl:text-xl text-center text-[18px] font-medium">Available Features</p>
+                <div class="mt-5 space-y-5">
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Access to selected free courses.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Limited course materials and resources.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Basic community support.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Ad-supported platform.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Course completion certificates.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-xmark text-gray-15 border-default rounded-md p-1"></i>
+                    <p class="text-gray-30">No certification upon completion.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-xmark text-gray-15 border-default rounded-md p-1"></i>
+                    <p class="text-gray-30">Early access to new courses and updates.</p>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="bg-primary block px-6 py-4.5 text-center text-white">Get Started</a>
+            </div>
+          </div>
+
+          <div class="bg-white-99 border-default padding-pricing flex flex-col rounded-xl">
+            <p
+              class="text-16px text-gray-15 bg-orange-97 border-orange-90 3xl:py-3 xl:rounded-lg rounded-sm border px-5.5 py-2 text-center font-medium"
+            >
+              Pro Plan
+            </p>
+            <p class="text-display text-gray-15 my-12.5 text-center">
+              $79
+              <span class="text-gray-30 text-[14px] font-medium xl:text-base">/month</span>
+            </p>
+
+            <div class="border-default overflow-hidden rounded-md xl:rounded-xl bg-white">
+              <div class="3xl:p-10 p-5 xl:p-7.5">
+                <p class="3xl:text-xl text-center text-[18px] font-medium">Available Features</p>
+                <div class="mt-5 space-y-5">
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Unlimited access to all courses.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Unlimited course materials and resources.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Priority support from instructors.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Course completion certificates.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Ad-free experience.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Access to exclusive Pro Plan community forums.</p>
+                  </div>
+
+                  <div class="feature-item">
+                    <i class="fa-solid fa-check text-gray-15 bg-orange-95 rounded-md p-1"></i>
+                    <p class="text-gray-30">Early access to new courses and updates.</p>
+                  </div>
+                </div>
+              </div>
+              <a href="" class="bg-primary block px-6 py-4.5 text-center text-white">Get Started</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="container mt-15 xl:mt-25">
+        <div class="3xl:gap-30 3xl:p-25 flex flex-col gap-10 rounded-xl bg-white p-6 xl:flex-row xl:gap-20 xl:p-20">
+          <div class="xl:w-2/5">
+            <h2 class="text-heading-1 text-gray-15">Frequently Asked Questions</h2>
+            <p class="text-gray-20 mt-2">Still you have any questions? Contact our Team via support@skillbridge.com</p>
+            <a
+              href="#"
+              class="text-gray-15 hover-primary 3xl:mt-12.5 3xl:px-6 3xl:py-4.5 border-default mt-5 block w-fit rounded-lg px-5 py-3.5 xl:mt-10"
+            >
+              See All FAQ's
+            </a>
+          </div>
+
+          <ul class="space-y-5 xl:w-3/5">
+            <li class="3xl:p-15 border-default rounded-[10px] p-6 xl:p-10">
+              <input type="checkbox" class="peer/faq hidden" id="faq" />
+              <label
+                for="faq"
+                class="flex items-start justify-between peer-checked/faq:[&>.fa-plus]:hidden! peer-checked/faq:[&>.fa-xmark]:block!"
+              >
+                <p class="3xl:text-[18px] text-gray-15 text-[16px] font-medium">
+                  Can I enroll in multiple courses at once?
+                </p>
+                <i
+                  class="fa-solid fa-plus bg-orange-95 text-gray-15 hover:bg-primary cursor-pointer rounded-md p-2.5 hover:text-white"
+                ></i>
+
+                <i
+                  class="fa-solid fa-xmark bg-orange-95 text-gray-15 hover:bg-primary hidden! cursor-pointer rounded-md p-2.5 hover:text-white"
+                ></i>
+              </label>
+              <div class="border-white-95 3xl:mt-12.5 mt-5 hidden border-t peer-checked/faq:block xl:mt-10">
+                <p class="text-gray-30 3xl:mt-12.5 mt-5 xl:mt-10">
+                  Absolutely! You can enroll in multiple courses simultaneously and access them at your convenience.
+                </p>
+
+                <div
+                  class="bg-white-97 border-default 3xl:mt-12.5 mt-5 flex items-center justify-between rounded-md p-4 xl:mt-10"
+                >
+                  <span class="text-gray-20 font-medium">Enrollment Process for Different Courses</span>
+                  <i class="fa-solid fa-arrow-right text-gray-30 3xl:p-3.5 rounded-full bg-white p-2.5"></i>
+                </div>
+              </div>
+            </li>
+
+            <li class="3xl:p-15 border-default rounded-[10px] p-6 xl:p-10">
+              <label for="" class="flex items-start justify-between">
+                <p class="3xl:text-[18px] text-gray-15 text-[16px] font-medium">
+                  What kind of support can I expect from instructors?
+                </p>
+                <i
+                  class="fa-solid fa-plus bg-orange-95 text-gray-15 hover:bg-primary cursor-pointer rounded-md p-2.5 hover:text-white"
+                ></i>
+              </label>
+            </li>
+
+            <li class="3xl:p-15 border-default rounded-[10px] p-6 xl:p-10">
+              <label for="" class="flex items-start justify-between">
+                <p class="3xl:text-[18px] text-gray-15 text-[16px] font-medium">
+                  Are the courses self-paced or do they have specific start and end dates?
+                </p>
+                <i
+                  class="fa-solid fa-plus bg-orange-95 text-gray-15 hover:bg-primary cursor-pointer rounded-md p-2.5 hover:text-white"
+                ></i>
+              </label>
+            </li>
+
+            <li class="3xl:p-15 border-default rounded-[10px] p-6 xl:p-10">
+              <label for="" class="flex items-start justify-between">
+                <p class="3xl:text-[18px] text-gray-15 text-[16px] font-medium">
+                  Are there any prerequisites for the courses?
+                </p>
+                <i
+                  class="fa-solid fa-plus bg-orange-95 text-gray-15 hover:bg-primary cursor-pointer rounded-md p-2.5 hover:text-white"
+                ></i>
+              </label>
+            </li>
+
+            <li class="3xl:p-15 border-default rounded-[10px] p-6 xl:p-10">
+              <label for="" class="flex items-start justify-between">
+                <p class="3xl:text-[18px] text-gray-15 text-[16px] font-medium">
+                  Can I download the course materials for offline access?
+                </p>
+                <i
+                  class="fa-solid fa-plus bg-orange-95 text-gray-15 hover:bg-primary cursor-pointer rounded-md p-2.5 hover:text-white"
+                ></i>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+
+    <footer class="mt-15 bg-white xl:mt-25">
+      <div
+        class="3xl:pt-25 3xl:pb-12.5 container flex flex-col justify-between pt-12.5 pb-5 xl:flex-row xl:pt-15 xl:pb-7.5"
+      >
+        <ul class="mb-6 xl:mb-0 xl:w-2/5">
+          <li>
+            <a href="./index.html"><img src="./assets/img/logo/Logo-destop.png" alt="" /></a>
+          </li>
+          <li class="text-gray-15 mt-7.5 flex items-center gap-1.5">
+            <i class="fa-solid fa-envelope"></i>
+            <p>hello@skillbridge.com</p>
+          </li>
+          <li class="text-gray-15 my-3 flex items-center gap-1.5">
+            <i class="fa-solid fa-phone"></i>
+            <p>+91 91813 23 2309</p>
+          </li>
+          <li class="text-gray-15 flex items-center gap-1.5">
+            <i class="fa-solid fa-location-dot"></i>
+            <p>Somewhere in the World</p>
+          </li>
+        </ul>
+
+        <div class="grid w-full grid-cols-2 gap-6 xl:w-3/5 xl:grid-cols-3 xl:gap-0">
+          <ul>
+            <li class="3xl:text-[20px] mb-2.5 text-[18px] font-semibold">
+              <a href="./index.html" class="text-gray-15 hover:text-primary">Home</a>
+            </li>
+            <li class="mb-1 xl:mb-2"><a href="#" class="text-gray-35 hover:text-primary">Benefits</a></li>
+            <li class="mb-1 xl:mb-2"><a href="#" class="text-gray-35 hover:text-primary">Our Courses</a></li>
+            <li class="mb-1 xl:mb-2"><a href="#" class="text-gray-35 hover:text-primary">Our Testimonials</a></li>
+            <li><a href="#" class="text-gray-35 hover:text-primary">Our FAQ</a></li>
+          </ul>
+
+          <ul>
+            <li class="3xl:text-[20px] mb-2.5 text-[18px] font-semibold">
+              <a href="" class="text-gray-15 hover:text-primary">About Us</a>
+            </li>
+            <li class="mb-1 xl:mb-2"><a href="#" class="text-gray-35 hover:text-primary">Company</a></li>
+            <li class="mb-1 xl:mb-2"><a href="#" class="text-gray-35 hover:text-primary">Achievements</a></li>
+            <li class="mb-1 xl:mb-2"><a href="#" class="text-gray-35 hover:text-primary">Our Goals</a></li>
+          </ul>
+
+          <div class="col-span-2 xl:col-span-1">
+            <p class="3xl:text-[20px] text-gray-15 pb-2.5 text-[18px] font-semibold xl:pb-3.5">Social Profiles</p>
+            <div class="flex items-center gap-3.5">
+              <a
+                href="https://f8.edu.vn"
+                target="_blank"
+                class="bg-white-97 border-default flex h-11 w-11 items-center justify-center rounded-md"
+              >
+                <i class="fa-brands fa-facebook text-gray-20"></i>
+              </a>
+              <a
+                href="https://f8.edu.vn"
+                target="_blank"
+                class="bg-white-97 border-default flex h-11 w-11 items-center justify-center rounded-md"
+              >
+                <i class="fa-brands fa-twitter text-gray-20"></i>
+              </a>
+              <a
+                href="https://f8.edu.vn"
+                target="_blank"
+                class="bg-white-97 border-default flex h-11 w-11 items-center justify-center rounded-md"
+              >
+                <i class="fa-brands fa-linkedin text-gray-20"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="border-white-95 3xl:pt-12.5 3xl:pb-7.5 border-t pt-5 pb-6 text-center xl:pt-7.5 xl:pb-5">
+          <p class="text-gray-40">© 2023 Skillbridge. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
