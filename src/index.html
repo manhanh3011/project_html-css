@@ -36,7 +36,6 @@
           <i class="fa-solid fa-arrow-right"></i>
         </div>
 
-        <input type="checkbox" id="menu-toggle" class="peer hidden" />
         <nav class="container flex items-center justify-between py-3.5 xl:p-5">
           <div class="flex items-center">
             <a href="./index.html"><img src="./assets/img/logo/Logo-destop.png" alt="logo" /></a>
@@ -80,9 +79,11 @@
         </nav>
       </div>
 
+      <input type="checkbox" id="menu-toggle" class="peer hidden"/>
+
       <!-- menu mobile -->
       <div
-        class="fixed top-0 right-0 z-50 h-screen w-83 translate-x-full rounded-l-4xl bg-white p-2.5 transition-transform duration-300 peer-checked:translate-x-0"
+        class="fixed top-0 right-0 z-50 h-screen w-80 translate-x-full rounded-l-4xl bg-white p-2.5 transition-transform duration-300 peer-checked:translate-x-0"
       >
         <div class="border-white-95 flex items-center justify-between border-b px-2.5 py-3.5">
           <img src="./assets/img/logo/Logo-destop.png" alt="logo" />
@@ -104,6 +105,7 @@
         for="menu-toggle"
         class="invisible fixed inset-0 z-40 bg-black/50 opacity-0 transition-all duration-300 peer-checked:visible peer-checked:opacity-100"
       ></label>
+
       <div class="container mt-20 text-center">
         <div
           class="border-default relative mx-auto inline-flex items-center rounded-[11px] bg-white px-3.5 py-3.5 xl:px-5"
@@ -278,7 +280,10 @@
               dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in.
             </p>
           </div>
-          <a href="./courses.html" class="text-gray-15 bg-white-99 hover-primary border-default w-fit rounded-md px-5 py-3.5">
+          <a
+            href="./courses.html"
+            class="text-gray-15 bg-white-99 hover-primary border-default w-fit rounded-md px-5 py-3.5"
+          >
             View All
           </a>
         </div>
