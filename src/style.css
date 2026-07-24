@@ -64,6 +64,10 @@ body {
   @apply 3xl:text-2xl text-[18px] font-semibold xl:text-[20px];
 }
 
+.hover-primary.active {
+  @apply bg-primary-light text-primary;
+}
+
 @utility hover-primary {
   @apply hover:bg-primary-light hover:text-primary;
 }
